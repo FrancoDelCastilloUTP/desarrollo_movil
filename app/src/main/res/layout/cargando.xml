@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Servicio 301 - Corredor Azul" >
+
+        <ImageView
+            android:id="@+id/toolbar_icon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/bus"
+            app:tint="@android:color/white"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargando resultados..."
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="197dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="168dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="281dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:srcCompat="@drawable/cargando"
+            app:tint="@color/blue" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
