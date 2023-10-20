@@ -1,4 +1,3 @@
-/// Avance 1 - Desarrollo de aplicaciones moviles
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -50,46 +49,77 @@
             android:text="Bienvenido"
             android:textSize="40dp"
             tools:layout_editor_absoluteX="106dp"
-            tools:layout_editor_absoluteY="147dp" />
+            tools:layout_editor_absoluteY="54dp" />
 
         <TextView
             android:id="@+id/textView4"
+            android:layout_width="351dp"
+            android:layout_height="51dp"
+            android:text="Para Iniciar un nuevo registro, primero localiza tu paradero:"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="349dp"
+            android:layout_height="61dp"
+            android:text="Te faltan 5 registros para ganar un viaje gratis"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Por favor, localiza tu paradero"
+            android:text="Viajes gratis acumulados: 0"
+            android:textAlignment="center"
             android:textSize="20dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="180dp" />
 
-            tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="269dp" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta 12345678"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="116dp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Importante: Asegurate de habilitar tu ubicación"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="624dp" />
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="534dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="242dp"
             android:layout_height="80dp"
+            android:backgroundTint="@color/blue"
             android:text="Localizar"
             android:textSize="26dp"
-            android:backgroundTint="@color/blue"
             tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="335dp">
+            tools:layout_editor_absoluteY="440dp">
 
         </Button>
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="46dp"
+            android:layout_height="48dp"
             app:srcCompat="@drawable/location"
             app:tint="@android:color/white"
-            tools:layout_editor_absoluteX="262dp"
-            tools:layout_editor_absoluteY="356dp" />
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="456dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
