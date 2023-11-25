@@ -31,12 +31,12 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="665dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +48,11 @@
             android:layout_height="wrap_content"
             android:text="Bienvenido"
             android:textSize="40dp"
-            tools:layout_editor_absoluteX="106dp"
-            tools:layout_editor_absoluteY="54dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
 
         <TextView
             android:id="@+id/textView4"
@@ -58,38 +61,67 @@
             android:text="Para Iniciar un nuevo registro, primero localiza tu paradero:"
             android:textAlignment="center"
             android:textSize="20dp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="377dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
 
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="349dp"
-            android:layout_height="61dp"
-            android:text="Te faltan 5 registros para ganar un viaje gratis"
+            android:id="@+id/Recordatorio"
+            android:layout_width="351dp"
+            android:layout_height="51dp"
+            android:text="Cada 10 visitas ganas un viaje gratis"
             android:textAlignment="center"
             android:textSize="20dp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="220dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.563" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/visitas"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:text="Tienes 5 visitas registradas"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.413" />
+
+        <TextView
+            android:id="@+id/freeTrips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Viajes gratis acumulados: 0"
             android:textAlignment="center"
             android:textSize="20dp"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="180dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/tarjetaId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tarjeta 12345678"
             android:textAlignment="center"
             android:textSize="20dp"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="116dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22" />
 
         <TextView
             android:id="@+id/textView5"
@@ -97,18 +129,25 @@
             android:layout_height="wrap_content"
             android:text="Importante: Asegurate de habilitar tu ubicación"
             android:textAlignment="center"
-            tools:layout_editor_absoluteX="58dp"
-            tools:layout_editor_absoluteY="534dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.949" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnAbrirCargandoParaderos"
             android:layout_width="242dp"
             android:layout_height="80dp"
             android:backgroundTint="@color/blue"
-            android:text="Localizar"
+            android:text="Localizar     "
             android:textSize="26dp"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="440dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.846">
 
         </Button>
 
@@ -116,10 +155,14 @@
             android:id="@+id/imageView2"
             android:layout_width="46dp"
             android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.823"
             app:srcCompat="@drawable/location"
-            app:tint="@android:color/white"
-            tools:layout_editor_absoluteX="267dp"
-            tools:layout_editor_absoluteY="456dp" />
+            app:tint="@android:color/white" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

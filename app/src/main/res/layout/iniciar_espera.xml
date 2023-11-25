@@ -37,10 +37,8 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.437">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView7"
@@ -51,14 +49,23 @@
             android:text="En Espera del Bus..."
             android:textAlignment="center"
             android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="30dp"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/textView14"
@@ -67,26 +74,28 @@
             android:layout_marginBottom="20dp"
             android:text="Paradero Seleccionado: Paradero 1"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+
+            />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
-            android:text="Tarjeta: 12345678"
+            android:text="Tarjeta: 1234567890"
             android:textAlignment="center"
             android:textSize="20dp" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="208dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/green"
             android:text="Finalizar Espera"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button7"
@@ -100,13 +109,13 @@
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="wrap_content"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/red"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
             android:text="Reportar Unidad"
-            android:textSize="14dp" />
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"

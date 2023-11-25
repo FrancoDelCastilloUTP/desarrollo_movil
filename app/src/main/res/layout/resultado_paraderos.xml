@@ -30,179 +30,35 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="374dp"
-        android:layout_height="38dp"
-        android:text="Elige el paradero:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="155dp" />
+    <!-- Contenedor para otros elementos -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        >
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv1"
-        android:layout_width="409dp"
-        android:layout_height="107dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="203dp">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:text="Elige el paradero:"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+             />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="6dp">
-
-                <ImageView
-                    android:id="@+id/toolbar_icon1"
-                    android:layout_width="86dp"
-                    android:layout_height="86dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="start|center_vertical"
-                    android:src="@drawable/paradero"
-                    app:tint="@android:color/black" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@+id/toolbar_icon1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Paradero 1"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv2"
-        android:layout_width="409dp"
-        android:layout_height="107dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="312dp">
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="6dp">
-
-                <ImageView
-                    android:id="@+id/toolbar_icon2"
-                    android:layout_width="86dp"
-                    android:layout_height="86dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="start|center_vertical"
-                    android:src="@drawable/paradero"
-                    app:tint="@android:color/black" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@+id/toolbar_icon2"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Paradero 2"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:text="Tiene muchas personas en espera!"
-                        android:textAlignment="center"
-                        android:textColor="@color/red"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv3"
-        android:layout_width="409dp"
-        android:layout_height="107dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="419dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="6dp">
-
-                <ImageView
-                    android:id="@+id/toolbar_icon3"
-                    android:layout_width="86dp"
-                    android:layout_height="86dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="start|center_vertical"
-                    android:src="@drawable/paradero"
-                    app:tint="@android:color/black" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@+id/toolbar_icon3"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Paradero 3"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:text="Tiene muchas personas en espera!"
-                        android:textAlignment="center"
-                        android:textColor="@color/red"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
